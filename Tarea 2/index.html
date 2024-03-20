@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de idioma P</title>
+</head>
+<body>
+    <script>
+        let palabra = prompt("¿Qué palabra desea traducir?").toLowerCase();
+        let nuevaPalabra = palabra.replace(/[aeiou]/gi, (match) => match + 'p' + match.toLowerCase());
+        alert("Tu traducción es: " + nuevaPalabra);
+    </script>
+</body>
+</html>
